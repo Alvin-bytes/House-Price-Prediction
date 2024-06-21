@@ -1,9 +1,7 @@
-import sys
-!{sys.executable} -m pip install joblib
-!{sys.executable} -m pip install streamlit
+
 import streamlit as st
 import pandas as pd
-import joblib
+#import joblib
 import numpy as np
 from datetime import date
 
@@ -14,7 +12,7 @@ from datetime import date
 #joblib.dump(loaded_regressor, 'trained_random_forest_model.joblib')
 
 # Load the saved trained model
-loaded_regressor = joblib.load('trained_random_forest_model.joblib')
+loaded_regressor = 0#joblib.load('trained_random_forest_model.joblib')
 
 # Define a function for the login page
 def login_page():
